@@ -1,0 +1,30 @@
+name: Operator proposal
+description: Propose or reproduce an improvement operator
+title: "[operator] "
+labels: [operator]
+body:
+  - type: input
+    id: operator
+    attributes:
+      label: Operator ID
+      placeholder: name@0.1.0
+    validations:
+      required: true
+  - type: textarea
+    id: mechanism
+    attributes:
+      label: Mechanism, applicability, and lineage
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Matched-budget tasks, baseline, interval, cost, and regressions
+    validations:
+      required: true
+  - type: textarea
+    id: failures
+    attributes:
+      label: Known failures and protected-effect review
+    validations:
+      required: true

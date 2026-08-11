@@ -1,0 +1,19 @@
+{
+  "api_version": "evolsa/v1",
+  "budget": {"max_attempts": 1, "max_cost": 0.0, "max_exec_seconds": 60.0, "max_tokens": 4096},
+  "context_policy": "draft-no-inherited-memory-v1",
+  "evidence_ids": [],
+  "expected_effects": ["task_artifact"],
+  "forbidden_effects": ["operator", "scheduler", "memory_policy", "evaluator", "sandbox", "budget", "promotion_gate", "event_log", "release_permission"],
+  "generator": {"ref": "builtin/draft-l0", "type": "prompt_template"},
+  "inputs": ["task_spec"],
+  "intent": "create an independent initial task artifact from the specification",
+  "known_failures": [],
+  "lifecycle": "proposed",
+  "name": "draft",
+  "parents": [],
+  "preconditions": ["task_spec_available"],
+  "signature": "",
+  "verification": {"baseline": "seed-artifact", "guardrails": ["valid_rate", "cost", "regression"], "minimum_tasks": 4, "primary_metric": "paired_lift"},
+  "version": "1.0.0"
+}

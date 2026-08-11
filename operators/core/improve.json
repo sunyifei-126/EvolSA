@@ -1,0 +1,19 @@
+{
+  "api_version": "evolsa/v1",
+  "budget": {"max_attempts": 1, "max_cost": 0.0, "max_exec_seconds": 60.0, "max_tokens": 4096},
+  "context_policy": "improve-parent-3-ancestors-3-siblings-v1",
+  "evidence_ids": [],
+  "expected_effects": ["task_artifact"],
+  "forbidden_effects": ["operator", "scheduler", "memory_policy", "evaluator", "sandbox", "budget", "promotion_gate", "event_log", "release_permission"],
+  "generator": {"ref": "builtin/improve-l0", "type": "prompt_template"},
+  "inputs": ["task_spec", "parent", "experience_view"],
+  "intent": "produce a higher-utility revision of one selected parent artifact",
+  "known_failures": [],
+  "lifecycle": "proposed",
+  "name": "improve",
+  "parents": [],
+  "preconditions": ["one_evaluated_parent"],
+  "signature": "",
+  "verification": {"baseline": "draft@1.0.0", "guardrails": ["valid_rate", "cost", "regression"], "minimum_tasks": 4, "primary_metric": "paired_lift"},
+  "version": "1.0.0"
+}

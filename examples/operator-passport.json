@@ -1,0 +1,19 @@
+{
+  "api_version": "evolsa/v1",
+  "name": "normalize-punctuation",
+  "version": "0.1.0",
+  "intent": "normalize punctuation before applying phrase rules",
+  "parents": ["improve@1.0.0"],
+  "inputs": ["task_state", "candidate", "experience_view"],
+  "preconditions": ["punctuation_errors_observed"],
+  "expected_effects": ["task_artifact"],
+  "forbidden_effects": ["evaluator", "sandbox", "budget", "promotion_gate", "event_log", "release_permission"],
+  "context_policy": "branch-local-v1",
+  "generator": {"type": "prompt_template", "ref": "operators/community/normalize-punctuation.txt"},
+  "budget": {"max_tokens": 512, "max_exec_seconds": 5, "max_attempts": 1, "max_cost": 0},
+  "verification": {"baseline": "improve@1.0.0", "primary_metric": "paired_lift", "guardrails": ["valid_rate", "cost", "regression"], "minimum_tasks": 4},
+  "known_failures": ["may alter meaningful punctuation in code-like identifiers"],
+  "lifecycle": "proposed",
+  "evidence_ids": [],
+  "signature": ""
+}

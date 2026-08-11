@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">EvolSA</title><desc id="desc">Evidence-gated evolution of improvement operators</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#07111f"/><stop offset="1" stop-color="#12314a"/></linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#42d7e8"/><stop offset="1" stop-color="#58df93"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="360" rx="30" fill="url(#bg)"/>
+  <g fill="none" stroke="#21455f" stroke-width="2" opacity=".8">
+    <path d="M720 180H790L840 90H925"/><path d="M790 180L850 180H965"/><path d="M790 180L840 270H925"/>
+  </g>
+  <g fill="#0d2338" stroke="url(#edge)" stroke-width="3" filter="url(#glow)">
+    <circle cx="705" cy="180" r="42"/><circle cx="855" cy="90" r="31"/><circle cx="905" cy="180" r="31"/><circle cx="855" cy="270" r="31"/><circle cx="1010" cy="180" r="42"/>
+  </g>
+  <g fill="#dff8ff" font-family="ui-monospace, SFMono-Regular, monospace" font-size="15" text-anchor="middle">
+    <text x="705" y="185">Improve</text><text x="855" y="95">Audit</text><text x="905" y="185">Repair</text><text x="855" y="275">Ablate</text><text x="1010" y="185">g + 1</text>
+  </g>
+  <g font-family="ui-sans-serif, system-ui, sans-serif" fill="#eaf7ff">
+    <text x="72" y="120" font-size="66" font-weight="800">EvolSA</text>
+    <text x="74" y="170" font-size="27" fill="#42d7e8">Evolve the improver.</text>
+    <text x="74" y="216" font-size="19" fill="#9eb5c9">Bounded Recursive Self-Improvement</text>
+    <text x="74" y="248" font-size="19" fill="#9eb5c9">with matched-budget evidence gates</text>
+  </g>
+  <rect x="72" y="285" width="430" height="5" rx="3" fill="url(#edge)"/>
+</svg>

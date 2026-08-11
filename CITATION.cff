@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use EvolSA in research, cite this software and the research relevant to your experiment."
+title: "EvolSA: An Operator Foundry and Evidence Gate for Bounded Recursive Self-Improvement"
+type: software
+version: 0.1.0
+date-released: 2026-08-11
+license: Apache-2.0
+repository-code: "https://github.com/sunyifei-126/EvolSA"
+url: "https://github.com/sunyifei-126/EvolSA"
+authors:
+  - name: "EvolSA contributors"
+keywords:
+  - recursive self-improvement
+  - self-improving LLM agents
+  - self-evolving agents
+  - agentic AI
+  - AI safety
+  - operator learning

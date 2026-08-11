@@ -1,0 +1,18 @@
+{
+  "schema_version": "evolsa.taskpack/v1",
+  "name": "incident-routing-lite",
+  "license": "Apache-2.0",
+  "adapter": "evolsa.demo.incident_routing:IncidentRoutingAdapter",
+  "splits": {
+    "mine": {"seeds": [0, 1, 2, 3], "feedback": "structured"},
+    "validation": {"seeds": [0, 1, 2, 3], "feedback": "structured"},
+    "promotion": {"seeds": [0, 1, 2, 3], "feedback": "aggregate-only"},
+    "sealed": {"seeds": [0, 1, 2, 3], "feedback": "report-only"}
+  },
+  "default_budget": {
+    "max_tokens": 256,
+    "max_exec_seconds": 1.0,
+    "max_attempts": 1,
+    "max_cost": 0.0
+  }
+}

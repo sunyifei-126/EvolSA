@@ -1,0 +1,52 @@
+[build-system]
+requires = ["setuptools==80.9.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "evolsa-rsi"
+version = "0.1.0"
+description = "A model-agnostic operator foundry and evidence gate for bounded Recursive Self-Improvement"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE"]
+authors = [{name = "EvolSA contributors"}]
+keywords = [
+  "recursive-self-improvement",
+  "self-improving-agents",
+  "self-evolving-agents",
+  "llm-agents",
+  "agentic-ai",
+  "ai-safety",
+  "operator-learning",
+  "evolutionary-search",
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Science/Research",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+  "Typing :: Typed",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/sunyifei-126/EvolSA"
+Repository = "https://github.com/sunyifei-126/EvolSA"
+Documentation = "https://github.com/sunyifei-126/EvolSA/tree/main/docs"
+Issues = "https://github.com/sunyifei-126/EvolSA/issues"
+Security = "https://github.com/sunyifei-126/EvolSA/security/policy"
+
+[project.scripts]
+evolsa = "evolsa.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+evolsa = ["py.typed"]
+"evolsa.schemas" = ["*.json"]

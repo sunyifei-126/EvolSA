@@ -1,0 +1,7 @@
+EvolSA
+Copyright 2026 EvolSA contributors
+
+This product includes software developed by the EvolSA contributors.
+
+EvolSA is a from-scratch implementation inspired by published research. It does not include
+OpenRSI source code, Frontis-MA1 model weights, OpenMLE datasets, or supplied reference PDFs.

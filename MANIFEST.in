@@ -1,0 +1,20 @@
+include LICENSE
+include NOTICE
+include README.md
+include README.zh-CN.md
+include CHANGELOG.md
+include CITATION.cff
+include SECURITY.md
+include GOVERNANCE.md
+include CONTRIBUTING.md
+include CODE_OF_CONDUCT.md
+include Makefile
+recursive-include scripts *.py
+recursive-include .github *.yml *.md
+recursive-include docs *.md *.svg
+recursive-include operators *.json
+recursive-include benchmarks *.json *.md
+recursive-include examples *.json *.py
+recursive-include schemas *.json
+recursive-include src/evolsa/schemas *.json
+global-exclude __pycache__ *.py[cod] .DS_Store
